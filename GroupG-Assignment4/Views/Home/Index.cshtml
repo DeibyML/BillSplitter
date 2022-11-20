@@ -1,0 +1,84 @@
+﻿@model GroupG_Assignment4.Models.Bill;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-danger">
+    @Html.ValidationSummary(false)
+</div>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-md-3">
+                Total amount:
+            </div>
+            <div class="col-md-3">
+                <input type="text" name="amount" value="@Model.Amount" id="amount" class="form-control">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-3">
+                Split between:
+            </div>
+            <div class="col-md-3">
+                <input type="number" name="quantityPeople" value="@Model.QuantityPeople" id="quantityPeople" class="form-control">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-3">
+                Tip:
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control" name="tip" id="tip" value="@Model.Tip">
+            </div>
+        </div>
+
+        <button type="submit" class="w-50 btn btn-info">Calculate</button>
+
+    </div>
+
+    @if (@Model.Total > 0)
+    {
+
+        <div class="row card-body bg-info w-50 mt-3 rounded-2" style="margin-left: 15px">
+            <div class="col-md-6">
+                Total Amount:
+            </div>
+            <div class="col-md-6">
+                $ @Model.Amount
+            </div>
+
+            <div class="col-md-6">
+                Tip:
+            </div>
+            <div class="col-md-6">
+                @Model.Tip%
+            </div>
+
+            <div class="col-md-6">
+                Total:
+            </div>
+            <div class="col-md-6">
+                $ @Model.Total
+            </div>
+
+            <div class="col-md-6">
+                Split between:
+            </div>
+            <div class="col-md-6">
+                @Model.QuantityPeople
+            </div>
+
+            <hr>
+
+            <div class="col-md-6">
+                Individual Amount
+            </div>
+            <div class="col-md-6">
+                $ @Model.IndividualAmount
+            </div>            
+        </div>
+    }
+}

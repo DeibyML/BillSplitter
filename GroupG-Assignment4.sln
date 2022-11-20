@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupG-Assignment4", "GroupG-Assignment4\GroupG-Assignment4.csproj", "{AAB7EFF6-9DE2-4F61-8A31-DF71ADCEB69C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupG-Assignment4.Tests", "GroupG-Assignment4.Tests\GroupG-Assignment4.Tests.csproj", "{4F283811-841E-4023-8400-74C340456664}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAB7EFF6-9DE2-4F61-8A31-DF71ADCEB69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB7EFF6-9DE2-4F61-8A31-DF71ADCEB69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB7EFF6-9DE2-4F61-8A31-DF71ADCEB69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB7EFF6-9DE2-4F61-8A31-DF71ADCEB69C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F283811-841E-4023-8400-74C340456664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F283811-841E-4023-8400-74C340456664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F283811-841E-4023-8400-74C340456664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F283811-841E-4023-8400-74C340456664}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
